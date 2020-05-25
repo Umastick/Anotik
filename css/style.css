@@ -1,0 +1,115 @@
+/* ANØ_TIK */
+/* Feuille de style du site ANØ_TIK */
+/* Auteurs : Ezana Gebreyohannes et Hugo Ziami */
+
+
+/* ---------------------- COMMUN ---------------------- */
+html,body{
+    margin:0px;
+    padding:0px;
+    width:100%;
+    height:100%;
+    position:relative;
+    overflow: hidden;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    black url('../img/rise.jpg') 100% 100% no-repeat;
+    background-blend-mode: luminosity;
+    opacity:0.90;
+}
+
+
+/* ---------------------- IMPORTATION DE LA POLICE DE CARACTÈRE PERSONNALISÉE ---------------------- */
+@font-face { font-family:"Oneday"; src: url(../font/oneday.ttf); font-weight: normal;}
+
+/* ---------------------- SI INTERNET EXPLORER ---------------------- */
+@font-face { font-family:"Oneday"; src: url(../font/oneday.eot); font-weight: normal;}
+
+/* ---------------------- PAGE ACCUEIL ---------------------- */
+
+/* Première page du site invitant l'utilisateur à entrer et visiter le site */
+
+.center-top-home{
+    text-align: center;
+    color: darkgrey;
+    font-family: "Oneday";
+    font-size: 50px;
+}
+
+.center-mid-home{
+    text-align: center;
+    color: whitesmoke;
+    font-family: "Oneday";
+    margin-top:10%;
+    font-size: 50px;
+}
+
+
+.container-home{
+    height:100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-home {
+    margin-top: calc(50% + 25px);
+    position: relative;
+    display: inline-block;
+    width: 277px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+    font-weight:900;
+    font-size:17px;
+    letter-spacing: 0.045em;
+}
+
+.btn-home svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn-home svg rect {
+    //stroke: white;
+    stroke-width: 4;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.btn-home span{
+  background: rgb(255,130,130);
+  background: -moz-linear-gradient(left,  rgba(255,130,130,1) 0%, rgba(225,120,237,1) 100%);
+  background: -webkit-linear-gradient(left,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
+  background: linear-gradient(to right,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-home:hover svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 437;
+}
+
+/* ---------------------- BARRE DE NAVIGATION ---------------------- */
+
+/* Crée une barre de liens qui reste toujours en haut de la page pour faciliter la navigation sur le site */
